@@ -1,0 +1,54 @@
+body{
+	background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#album_img{
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 300px;
+	height: 250px;
+}
+h6{
+	margin-left: 30px;
+}
+h1{
+	font-size: 30px;
+}
+.logo{
+	width: 50px;
+	margin-left: 30px;
+
+}
+.icon{
+	justify-content: space-between;
+	margin-left: 30px;
+}
+#pre,#play,#next,#volumeMute{
+	background-color: lightgray;
+	border: 1px solid gray;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.control{
+	padding: 30px;
+	display: inline-flex;
+}
+h2,#artist{
+	margin-left: 55px;
+}
+.trackChange{
+	margin-top: 30px;
+	margin-left: 55px;
+}
+.volume{
+	margin-top: 30px;
+}
+.row{
+	margin-top: 30px;
+}
+#slider{
+	width: 300px;
+}

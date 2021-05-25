@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Music Player</title>
+	<!--link-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	
+	<!--fontawsome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1><img src="music_img/itunes.png" class="logo">  My Playlist</h1>
+	<br>
+	<h6>There are total 6 songs of Taylor Swift in my playlist.<b> Please press the next button ( <i class="fas fa-forward"></i> )to start listen. Enjoy !</b></h6>
+	<div class="row">
+		<div class="col-12 col-md-6" id="leftSide">
+			<img src="music_img/taylor.jpg" alt="Taylor Swift" id="album_img">
+			<br>
+			<div class="volume">
+			<button class="icon" onclick="volume_mute()" id="volumeMute"><i class="fas fa-volume-up"></i></button>
+			<input type="range" min="0" max="100" value="65" name="volume" onchange="volume_change()" id="volumeChange">
+			</div>
+		</div>
+		<br>
+		<div class="col-12 col-md-6 mt-sm-3" id="rightSide">
+			<h2 id="songTitle">Song Title</h2>
+			<p id="artist">Taylor Swift</p>
+			<div class="control">
+				<div class="icon">
+					<button onclick="preTrack()" id="pre"><i class="fas fa-backward"></i></button>
+				</div>
+				<div class="icon">
+					<button onclick="justPlay()" id="play"preload="none"><i class="fas fa-play "></i></button>
+				</div>
+				<div class="icon">
+				<button  onclick="nextTrack()" id="next"><i class="fas fa-forward"></i></button>
+				</div>
+			</div>
+			<br>
+			<div class="trackChange">
+				<input type="range" min="0" max="100" name="track" onchange="changeTrack()" id="slider">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
