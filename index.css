@@ -49,6 +49,9 @@ h2,#artist{
 .row{
 	margin-top: 30px;
 }
+#rightSide{
+	margin-top:15px;
+}
 #slider{
 	width: 250px;
 }
