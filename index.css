@@ -45,6 +45,7 @@ h1{
 }
 h2,#artist{
 	margin-left: 55px;
+	margin-top:20px;
 }
 .trackChange{
 	margin-top: 30px;
@@ -60,5 +61,5 @@ h2,#artist{
 	margin-top:15px;
 }
 #slider{
-	width: 250px;
+	width: 200px;
 }
